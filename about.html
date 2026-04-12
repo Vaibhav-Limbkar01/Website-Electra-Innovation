@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — ElectraInnovation</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo-text">Electra<span>Innovation</span></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-btn" aria-expanded="false">More <span class="nav-chevron">&#8964;</span></button>
+        <ul class="nav-dropdown-menu">
+          <li><a href="blogs.html">Blogs / Updates</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-tag">Our Story</div>
+    <h1>About ElectraInnovation</h1>
+    <p>A passionate team from Satara dedicated to making technology education accessible, practical, and impactful for every student and professional.</p>
+  </div>
+</div>
+
+<!-- ===== ABOUT CONTENT ===== -->
+<div class="section">
+
+  <!-- MISSION / VISION / VALUES -->
+  <div class="mvv-grid">
+    <div class="mvv-card">
+      <div class="mvv-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+      <h3>Our Mission</h3>
+      <p>To bridge the gap between theoretical education and industry-ready skills by providing hands-on, project-based technology training that empowers students to build, innovate, and lead.</p>
+    </div>
+    <div class="mvv-card">
+      <div class="mvv-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+      <h3>Our Vision</h3>
+      <p>To become Maharashtra's most trusted technology education centre — creating a generation of skilled engineers who drive innovation at every level of industry and society.</p>
+    </div>
+    <div class="mvv-card">
+      <div class="mvv-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Our Values</h3>
+      <p>Hands-on learning over passive instruction. Practical outcomes over certificates. Mentorship over lectures. We believe every student can become an innovator with the right guidance.</p>
+    </div>
+  </div>
+
+  <!-- STORY SECTION -->
+  <div class="about-story">
+    <div class="about-story-text">
+      <div class="section-tag">How It Started</div>
+      <h2>From a Small Lab to a Growing Community</h2>
+      <p>ElectraInnovation was founded in Satara, Maharashtra with a simple belief: the best way to learn electronics is to build something real. Our founders noticed that most engineering graduates had strong theoretical knowledge but struggled to translate it into working projects.</p>
+      <p>Starting with a small batch of 12 students, we ran our first Arduino workshop with nothing but enthusiasm, a handful of microcontroller boards, and a determination to make learning tangible. That first batch produced three working robots and a home automation prototype — and we were hooked.</p>
+      <p>Today, we have trained over 250 students, conducted 30+ seminars at colleges and institutions across Maharashtra, and supplied educational kits to dozens of schools and training centres. But every session still feels like that first workshop.</p>
+    </div>
+    <div class="about-story-img">
+      <img src="images/training2.jpeg" alt="ElectraInnovation training session">
+      <div class="about-story-stat-row">
+        <div class="about-story-stat">
+          <span class="stat-num">250+</span>
+          <span class="stat-label">Students Trained</span>
+        </div>
+        <div class="about-story-stat">
+          <span class="stat-num">30+</span>
+          <span class="stat-label">Seminars</span>
+        </div>
+        <div class="about-story-stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Active</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOUNDERS SECTION -->
+  <div class="section-header" style="margin-top: 72px;">
+    <div class="section-tag">The People Behind It</div>
+    <h2>Meet the Founders</h2>
+    <p>Experienced engineers and educators who turned their passion for technology into a mission to teach it.</p>
+  </div>
+
+  <div class="founders-grid">
+
+    <div class="founder-card">
+      <div class="founder-avatar founder-avatar-1">
+        <span>SP</span>
+      </div>
+      <div class="founder-info">
+        <h3>Founder &amp; Lead Trainer</h3>
+        <p class="founder-role">Electronics &amp; Embedded Systems Expert</p>
+        <p class="founder-bio">An electronics engineer with deep expertise in embedded systems, robotics, and IoT. Has designed and delivered training programs for hundreds of students across Maharashtra. Believes every engineer should be able to build what they imagine.</p>
+        <div class="founder-skills">
+          <span>Arduino</span>
+          <span>ESP32</span>
+          <span>PCB Design</span>
+          <span>Robotics</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="founder-card">
+      <div class="founder-avatar founder-avatar-2">
+        <span>RK</span>
+      </div>
+      <div class="founder-info">
+        <h3>Co-Founder &amp; Curriculum Head</h3>
+        <p class="founder-role">IoT &amp; Automation Specialist</p>
+        <p class="founder-bio">Specialises in IoT architecture, industrial automation, and curriculum design. Has worked with colleges across Satara and Pune to integrate practical electronics training into their engineering programs. Passionate about making tech education affordable and accessible.</p>
+        <div class="founder-skills">
+          <span>IoT</span>
+          <span>SCADA</span>
+          <span>PLC</span>
+          <span>Python</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WHY CHOOSE US -->
+  <div class="why-us-section">
+    <div class="section-header">
+      <div class="section-tag">Why Choose Us</div>
+      <h2>What Makes Us Different</h2>
+    </div>
+    <div class="why-us-grid">
+      <div class="why-us-item">
+        <div class="why-us-num">01</div>
+        <h4>100% Hands-On Learning</h4>
+        <p>Every concept is taught by building something. No passive lectures — students get components in their hands from day one.</p>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-num">02</div>
+        <h4>Industry-Aligned Curriculum</h4>
+        <p>Our courses are built around what employers actually need — not just what textbooks cover.</p>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-num">03</div>
+        <h4>Small Batch Sizes</h4>
+        <p>We keep batches small so every student gets direct attention, personal mentorship, and meaningful feedback.</p>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-num">04</div>
+        <h4>Kits You Keep</h4>
+        <p>Students keep their educational kits after the course — so the learning continues long after class ends.</p>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-num">05</div>
+        <h4>Post-Training Support</h4>
+        <p>We don't disappear after the course. Graduates get continued access to our mentors for project and career guidance.</p>
+      </div>
+      <div class="why-us-item">
+        <div class="why-us-num">06</div>
+        <h4>Affordable &amp; Accessible</h4>
+        <p>Quality technology education shouldn't be a luxury. We price our programs fairly for students from all backgrounds.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="cta-banner-text">
+      <h3>Want to be part of our journey?</h3>
+      <p>Join a course, book a seminar, or simply reach out to learn more about what we do.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">Electra<span>Innovation</span></a>
+      <p class="footer-tagline">Empowering innovation through technology training, seminars, and educational kits.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/919175431703" target="_blank" rel="noopener" class="social-btn whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/electrainnovations?igsh=cjc5NXh3eWp3ZHEy" target="_blank" rel="noopener" class="social-btn instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="fc-icon">&#9993;</span>
+          <a href="mailto:electrainnovationsatara@gmail.com">electrainnovationsatara@gmail.com</a>
+        </li>
+        <li>
+          <span class="fc-icon">&#128205;</span>
+          <span>Satara, Maharashtra, India</span>
+        </li>
+        <li>
+          <span class="fc-icon">&#128222;</span>
+          <a href="tel:+919175431703">+91 91754 31703</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Electronexus</strong>. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

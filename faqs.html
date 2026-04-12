@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs — ElectraInnovation</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo-text">Electra<span>Innovation</span></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-btn" aria-expanded="false">More <span class="nav-chevron">&#8964;</span></button>
+        <ul class="nav-dropdown-menu">
+          <li><a href="blogs.html">Blogs / Updates</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faqs.html" class="active">FAQs</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-tag">Got Questions?</div>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about our courses, services, kits, and how to get started. Can't find your answer? Reach out anytime.</p>
+  </div>
+</div>
+
+<!-- ===== FAQs ===== -->
+<div class="section">
+
+  <!-- FAQ SEARCH -->
+  <div class="faq-search-wrap">
+    <input type="text" id="faq-search" class="faq-search" placeholder="Search questions...">
+  </div>
+
+  <!-- FAQ CATEGORIES -->
+  <div class="faq-categories">
+
+    <!-- COURSES -->
+    <div class="faq-category">
+      <h3 class="faq-category-title">
+        <span class="faq-cat-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </span>
+        Courses
+      </h3>
+
+      <div class="faq-list" id="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do I need any prior experience to join a course?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>No prior experience is required for our beginner courses like Basic Electronics and Arduino Programming. We start from the fundamentals. For intermediate and advanced courses, a basic understanding of electronics or programming is helpful — we'll let you know the prerequisites on each course page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are the courses available online or only in-person?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Most of our courses are conducted in-person at our Satara centre, as hands-on lab work is a core part of the learning experience. Some courses like Python for Engineers are available in a hybrid format (online theory + in-person lab sessions). Contact us to discuss what works for you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Will I receive a certificate after completing a course?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All students who complete a course and build the required project receive a Certificate of Completion from ElectraInnovation (Electronexus). This certificate is recognised by partner colleges in Maharashtra and demonstrates practical, project-based skills to potential employers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the batch size for each course?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>We keep batches small — typically 8 to 15 students — to ensure every participant gets adequate attention, lab time, and personal mentorship. This is one of the key ways we differ from large coaching institutes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I get a refund if I change my mind after enrolling?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Refunds are available up to 3 days before the course begins. Once components and kits have been prepared for your batch, we cannot offer a full refund, but we can transfer your enrollment to the next available batch at no extra cost.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- KITS & EQUIPMENT -->
+    <div class="faq-category">
+      <h3 class="faq-category-title">
+        <span class="faq-cat-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </span>
+        Kits &amp; Equipment
+      </h3>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is the educational kit included in the course fee?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! For all hands-on courses, the educational kit with all required components is included in the course fee. You also get to keep the kit after the course ends, so you can continue building projects at home.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I buy kits separately without joining a course?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. We supply educational kits directly to students, colleges, and training centres. Each kit includes all components, a component guide, and project ideas. Contact us for pricing and bulk orders.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What types of kits do you offer?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>We offer Arduino starter kits, ESP32 IoT kits, robotics kits, sensor assortment kits, PCB design starter packs, and custom kits built around specific project goals. Bulk discounts are available for institutions ordering 10 or more kits.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEMINARS & SERVICES -->
+    <div class="faq-category">
+      <h3 class="faq-category-title">
+        <span class="faq-cat-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </span>
+        Seminars &amp; Services
+      </h3>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you conduct a seminar at our college?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — we regularly conduct seminars at colleges and schools across Maharashtra. We handle the entire programme, including demos, materials, and interactive activities. Contact us with your preferred dates and topic areas and we'll send you a proposal within 48 hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What topics can you cover in a seminar?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Popular seminar topics include: Introduction to IoT, Embedded Systems Trends, Robotics and Automation, AI Hardware and Edge Computing, PCB Design Fundamentals, Career Paths in Electronics Engineering, and more. We can also design a custom seminar around your institution's curriculum needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer final year project guidance?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We offer end-to-end mentoring for final year B.E./B.Tech projects — from selecting a topic and writing the proposal, to building the prototype and preparing documentation. We have guided dozens of students to successful project completions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GENERAL -->
+    <div class="faq-category">
+      <h3 class="faq-category-title">
+        <span class="faq-cat-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </span>
+        General
+      </h3>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Where are you located?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our centre is located at Servey No. 193/197, Kumar Garden Apartment, Flat No. SF 4, Second floor, near Mangalwar Tale Road, Mangalwar Peth, Satara, Maharashtra 415002. We're easily accessible from the main city. Feel free to call us before visiting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How do I register for a course or service?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Simply fill out the Contact form on our website, WhatsApp us at +91 91754 31703, or email electrainnovationsatara@gmail.com. We'll get back to you within 24 hours with all the details, including the next batch dates, fees, and how to confirm your spot.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer group or institutional discounts?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Group enrollments of 5 or more students receive a discount on course fees. Colleges and institutions booking bulk kit orders or corporate training programs also get preferential pricing. Contact us directly for a custom quote.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How quickly do you respond to enquiries?
+            <span class="faq-chevron">&#8964;</span>
+          </button>
+          <div class="faq-answer">
+            <p>We aim to respond to all enquiries within 24 hours on working days (Monday to Saturday). For urgent queries, WhatsApp is the fastest way to reach us — we typically respond within a few hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- STILL HAVE QUESTIONS -->
+  <div class="cta-banner">
+    <div class="cta-banner-text">
+      <h3>Still have questions?</h3>
+      <p>Our team is happy to help. Reach out directly and we'll get back to you promptly.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">Electra<span>Innovation</span></a>
+      <p class="footer-tagline">Empowering innovation through technology training, seminars, and educational kits.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/919175431703" target="_blank" rel="noopener" class="social-btn whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/electrainnovations?igsh=cjc5NXh3eWp3ZHEy" target="_blank" rel="noopener" class="social-btn instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="fc-icon">&#9993;</span>
+          <a href="mailto:electrainnovationsatara@gmail.com">electrainnovationsatara@gmail.com</a>
+        </li>
+        <li>
+          <span class="fc-icon">&#128205;</span>
+          <span>Satara, Maharashtra, India</span>
+        </li>
+        <li>
+          <span class="fc-icon">&#128222;</span>
+          <a href="tel:+919175431703">+91 91754 31703</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Electronexus</strong>. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

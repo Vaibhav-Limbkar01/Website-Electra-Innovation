@@ -89,7 +89,6 @@ document.addEventListener("keydown", (e) => {
 });
 
 /* ===== VIDEO PLAY HINT ===== */
-// Hide the ▶ overlay once user starts playing
 document.querySelectorAll(".video-wrap video").forEach(video => {
   video.addEventListener("play", () => {
     video.closest(".video-wrap").classList.add("playing");
@@ -98,3 +97,89 @@ document.querySelectorAll(".video-wrap video").forEach(video => {
     video.closest(".video-wrap").classList.remove("playing");
   });
 });
+
+/* ===== NAV DROPDOWN ===== */
+document.querySelectorAll(".nav-dropdown").forEach(dropdown => {
+  const btn = dropdown.querySelector(".nav-dropdown-btn");
+  const menu = dropdown.querySelector(".nav-dropdown-menu");
+
+  if (!btn || !menu) return;
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = menu.classList.contains("show");
+    document.querySelectorAll(".nav-dropdown-menu.show").forEach(m => m.classList.remove("show"));
+    document.querySelectorAll(".nav-dropdown-btn.open").forEach(b => b.classList.remove("open"));
+    if (!isOpen) {
+      menu.classList.add("show");
+      btn.classList.add("open");
+      btn.setAttribute("aria-expanded", "true");
+    } else {
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+
+document.addEventListener("click", () => {
+  document.querySelectorAll(".nav-dropdown-menu.show").forEach(m => m.classList.remove("show"));
+  document.querySelectorAll(".nav-dropdown-btn.open").forEach(b => {
+    b.classList.remove("open");
+    b.setAttribute("aria-expanded", "false");
+  });
+});
+
+/* ===== COURSE / BLOG FILTER TABS ===== */
+document.querySelectorAll(".filter-tabs").forEach(tabGroup => {
+  const btns = tabGroup.querySelectorAll(".filter-btn");
+  const gridId = tabGroup.id === "course-filters" ? "courses-grid"
+               : tabGroup.id === "blog-filters"   ? "blog-grid"
+               : null;
+  if (!gridId) return;
+  const grid = document.getElementById(gridId);
+  if (!grid) return;
+
+  btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const filter = btn.dataset.filter;
+      grid.querySelectorAll("[data-category]").forEach(card => {
+        card.style.display = (filter === "all" || card.dataset.category === filter) ? "" : "none";
+      });
+    });
+  });
+});
+
+/* ===== FAQ ACCORDION ===== */
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".faq-item");
+    const answer = item.querySelector(".faq-answer");
+    const isOpen = item.classList.contains("open");
+
+    item.closest(".faq-list").querySelectorAll(".faq-item.open").forEach(openItem => {
+      openItem.classList.remove("open");
+      openItem.querySelector(".faq-answer").classList.remove("show");
+      openItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+    });
+
+    if (!isOpen) {
+      item.classList.add("open");
+      answer.classList.add("show");
+      btn.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+
+/* ===== FAQ SEARCH ===== */
+const faqSearch = document.getElementById("faq-search");
+if (faqSearch) {
+  faqSearch.addEventListener("input", () => {
+    const query = faqSearch.value.toLowerCase().trim();
+    document.querySelectorAll(".faq-item").forEach(item => {
+      const text = item.querySelector(".faq-question").textContent.toLowerCase()
+                 + item.querySelector(".faq-answer").textContent.toLowerCase();
+      item.classList.toggle("hidden", query !== "" && !text.includes(query));
+    });
+  });
+}
