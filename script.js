@@ -182,6 +182,7 @@ if (faqSearch) {
       item.classList.toggle("hidden", query !== "" && !text.includes(query));
     });
   });
+<<<<<<< HEAD
 }
 
 const track = document.getElementById("galleryTrack");
@@ -197,3 +198,6 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
+=======
+}
+>>>>>>> ba644fd62657c64fb5d5d0bf97db4686235a7a87

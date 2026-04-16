@@ -60,6 +60,7 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
 }
 
 .logo {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
 }
@@ -67,6 +68,9 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
 .logo img {
   height: 50px;   /* adjust between 45–65px for best fit */
   width: auto;
+=======
+  height: 46px;
+>>>>>>> ba644fd62657c64fb5d5d0bf97db4686235a7a87
   object-fit: contain;
 }
 
@@ -377,6 +381,7 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
   margin-top: 2px;
 }
 
+<<<<<<< HEAD
 .gallery-slider {
   padding: 80px 0;
   background: var(--bg);
@@ -435,6 +440,8 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
 .slider-btn.prev { left: -10px; }
 .slider-btn.next { right: -10px; }
 
+=======
+>>>>>>> ba644fd62657c64fb5d5d0bf97db4686235a7a87
 /* ===== SECTION SHARED ===== */
 .section {
   max-width: 1200px;
@@ -2171,6 +2178,7 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
   width: 72px;
   height: 72px;
   border-radius: 50%;
+<<<<<<< HEAD
   overflow: hidden;           
   flex-shrink: 0;
 }
@@ -2180,6 +2188,17 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.2; }
   height: 100%;
   object-fit: cover;         
   display: block;
+=======
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: white;
+  letter-spacing: 1px;
+>>>>>>> ba644fd62657c64fb5d5d0bf97db4686235a7a87
 }
 
 .founder-avatar-1 { background: linear-gradient(135deg, var(--primary), var(--teal)); }
