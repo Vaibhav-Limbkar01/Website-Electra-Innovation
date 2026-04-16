@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — ElectraInnovation</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo"><img src="images/logo.jpeg" alt="Electra Innovation Logo"></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-btn" aria-expanded="false">More <span class="nav-chevron">&#8964;</span></button>
+        <ul class="nav-dropdown-menu">
+          <li><a href="blogs.html">Blogs / Updates</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-tag">What We Teach</div>
+    <h1>Our Courses</h1>
+    <p>Practical, skill-based courses designed to transform beginners into confident, job-ready engineers.</p>
+  </div>
+</div>
+
+<!-- ===== COURSES ===== -->
+<div class="section">
+
+  <!-- FILTER TABS -->
+  <div class="filter-tabs" id="course-filters">
+    <button class="filter-btn active" data-filter="all">All Courses</button>
+    <button class="filter-btn" data-filter="electronics">Electronics</button>
+    <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+    <button class="filter-btn" data-filter="iot">IoT &amp; Automation</button>
+    <button class="filter-btn" data-filter="software">Software</button>
+  </div>
+
+  <!-- COURSE CARDS -->
+  <div class="courses-grid" id="courses-grid">
+
+    <div class="course-card" data-category="electronics">
+      <div class="course-card-top electronics">
+        <div class="course-icon">&#9889;</div>
+        <div class="course-level beginner">Beginner</div>
+      </div>
+      <div class="course-card-body">
+        <h3>Basic Electronics</h3>
+        <p>Learn the fundamentals of electronic components, circuits, and PCB basics. Perfect for absolute beginners.</p>
+        <ul class="course-highlights">
+          <li>Components &amp; Circuit Theory</li>
+          <li>Breadboard Prototyping</li>
+          <li>Soldering Techniques</li>
+          <li>PCB Design Introduction</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 4 Weeks</span>
+          <span class="course-badge">Hands-on Kit Included</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card" data-category="embedded">
+      <div class="course-card-top embedded">
+        <div class="course-icon">&#128268;</div>
+        <div class="course-level intermediate">Intermediate</div>
+      </div>
+      <div class="course-card-body">
+        <h3>Arduino Programming</h3>
+        <p>Master microcontroller programming with Arduino. Build real-world projects from sensors to actuators.</p>
+        <ul class="course-highlights">
+          <li>C/C++ for Microcontrollers</li>
+          <li>Sensor Integration</li>
+          <li>Motor &amp; Servo Control</li>
+          <li>Mini Project Build</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 6 Weeks</span>
+          <span class="course-badge">Kit Included</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card" data-category="iot">
+      <div class="course-card-top iot">
+        <div class="course-icon">&#127758;</div>
+        <div class="course-level intermediate">Intermediate</div>
+      </div>
+      <div class="course-card-body">
+        <h3>IoT with ESP32</h3>
+        <p>Connect devices to the internet, build dashboards, and automate systems using the powerful ESP32 module.</p>
+        <ul class="course-highlights">
+          <li>Wi-Fi &amp; Bluetooth Communication</li>
+          <li>Cloud Dashboards (Blynk / ThingSpeak)</li>
+          <li>MQTT Protocol</li>
+          <li>Home Automation Project</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 6 Weeks</span>
+          <span class="course-badge">Kit Included</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card" data-category="embedded">
+      <div class="course-card-top embedded">
+        <div class="course-icon">&#129302;</div>
+        <div class="course-level advanced">Advanced</div>
+      </div>
+      <div class="course-card-body">
+        <h3>Robotics &amp; Automation</h3>
+        <p>Design, build, and program autonomous robots. Covers mechanics, electronics, and intelligent control systems.</p>
+        <ul class="course-highlights">
+          <li>Robot Kinematics</li>
+          <li>Line Following &amp; Obstacle Avoidance</li>
+          <li>PID Control</li>
+          <li>Capstone Robot Project</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 8 Weeks</span>
+          <span class="course-badge">Robotic Kit Included</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card" data-category="iot">
+      <div class="course-card-top iot">
+        <div class="course-icon">&#127968;</div>
+        <div class="course-level intermediate">Intermediate</div>
+      </div>
+      <div class="course-card-body">
+        <h3>Home Automation Systems</h3>
+        <p>Build smart home systems that you can control from your phone. Voice control, scheduling, and more.</p>
+        <ul class="course-highlights">
+          <li>Relay Control Systems</li>
+          <li>Voice Assistant Integration</li>
+          <li>Mobile App Control</li>
+          <li>Energy Monitoring</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 5 Weeks</span>
+          <span class="course-badge">Kit Included</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card" data-category="software">
+      <div class="course-card-top software">
+        <div class="course-icon">&#128187;</div>
+        <div class="course-level beginner">Beginner</div>
+      </div>
+      <div class="course-card-body">
+        <h3>Python for Engineers</h3>
+        <p>Learn Python programming from scratch with a focus on hardware interfacing, data processing, and automation scripts.</p>
+        <ul class="course-highlights">
+          <li>Python Fundamentals</li>
+          <li>GPIO with Raspberry Pi</li>
+          <li>Data Logging &amp; Plotting</li>
+          <li>Automation Scripts</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 5 Weeks</span>
+          <span class="course-badge">Online &amp; Offline</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card" data-category="electronics">
+      <div class="course-card-top electronics">
+        <div class="course-icon">&#128300;</div>
+        <div class="course-level advanced">Advanced</div>
+      </div>
+      <div class="course-card-body">
+        <h3>PCB Design &amp; Fabrication</h3>
+        <p>Go from schematic to physical board. Learn EDA tools, design rules, and the full PCB manufacturing pipeline.</p>
+        <ul class="course-highlights">
+          <li>KiCad / EasyEDA Mastery</li>
+          <li>Signal Integrity Basics</li>
+          <li>Gerber File Generation</li>
+          <li>Physical Board Assembly</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 6 Weeks</span>
+          <span class="course-badge">PCB Fabricated for You</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card" data-category="embedded">
+      <div class="course-card-top embedded">
+        <div class="course-icon">&#128736;</div>
+        <div class="course-level advanced">Advanced</div>
+      </div>
+      <div class="course-card-body">
+        <h3>Industrial PLC Programming</h3>
+        <p>Learn Programmable Logic Controllers used in factories and industry. Ladder logic, SCADA, and HMI programming.</p>
+        <ul class="course-highlights">
+          <li>Ladder Logic Programming</li>
+          <li>SCADA Systems</li>
+          <li>HMI Panel Design</li>
+          <li>Industrial Project</li>
+        </ul>
+        <div class="course-meta">
+          <span class="course-duration">&#128337; 8 Weeks</span>
+          <span class="course-badge">Lab Access Included</span>
+        </div>
+        <a href="contact.html" class="course-cta">Enroll Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="cta-banner-text">
+      <h3>Not sure which course is right for you?</h3>
+      <p>Talk to our team and we'll recommend the best learning path based on your goals and experience level.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Get Free Guidance</a>
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">Electra<span> Innovations</span></a>
+      <p class="footer-tagline">Empowering innovation through technology training, seminars, and educational kits.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/919175431703" target="_blank" rel="noopener" class="social-btn whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/electrainnovations?igsh=cjc5NXh3eWp3ZHEy" target="_blank" rel="noopener" class="social-btn instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="fc-icon">✉</span>
+          <a href="mailto:electrainnovations18@gmail.com">electrainnovations18@gmail.com</a>
+        </li>
+        <li>
+          <span class="fc-icon">📍</span>
+          <span>Satara, Maharashtra, India</span>
+        </li>
+        <li>
+          <span class="fc-icon">📞</span>
+          <a href="tel:+919175431703">+91 91754 31703 <br> +91 7410074045</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>Electra Innovations</strong>. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
